@@ -20,8 +20,8 @@ public class SeasonalStatsService {
         return new SeasonalStatsDto(
                 seasonalStats.getSeason(),
                 seasonalStats.getPlayerId(),
-                seasonalStats.getPoints(),
-                seasonalStats.getAssists()
+                seasonalStats.getPointsPerGame(),
+                seasonalStats.getAssistsPerGame()
         );
     }
 }

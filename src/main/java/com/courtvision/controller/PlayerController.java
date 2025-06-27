@@ -1,5 +1,6 @@
 package com.courtvision.controller;
 
+import com.courtvision.dto.PlayerDto;
 import com.courtvision.dto.PlayerProfileDto;
 import com.courtvision.service.PlayerService;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +16,7 @@ public class PlayerController {
     }
 
     @GetMapping("/{personId}")
-    public PlayerProfileDto getPlayerProfile(@PathVariable Long personId) {
+    public PlayerDto getPlayerProfile(@PathVariable Long personId) {
         return playerService.getPlayerProfile(personId);
     }
 }

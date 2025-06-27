@@ -3,10 +3,10 @@ package com.courtvision.dto;
 public class SeasonalStatsDto {
     private String season;
     private Long playerId;
-    private int pts;
-    private int ast;
+    private double pts;
+    private double ast;
 
-    public SeasonalStatsDto(String season, Long playerId, int pts, int ast) {
+    public SeasonalStatsDto(String season, Long playerId, double pts, double ast) {
         this.season = season;
         this.playerId = playerId;
         this.pts = pts;
@@ -22,11 +22,11 @@ public class SeasonalStatsDto {
         return playerId;
     }
 
-    public int getPoints() {
+    public double getPoints() {
         return pts;
     }
 
-    public int getAssists() {
+    public double getAssists() {
         return ast;
     }
 }
