@@ -13,6 +13,12 @@ public class Player {
     @Column(name = "display_first_last")
     private String displayName;
 
+    @Column(name = "birthdate")
+    private String birthdate;
+
+    @Column(name = "country")
+    private String country;
+
     @Column(name = "position")
     private String position;
 
