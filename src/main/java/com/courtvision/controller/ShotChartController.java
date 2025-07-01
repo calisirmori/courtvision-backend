@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/shot-chart")
+@RequestMapping("/api/shot-chart")
 public class ShotChartController {
 
     private final ShotChartService shotChartService;
