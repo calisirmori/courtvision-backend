@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/player-profile")
+@RequestMapping("/player-profile")
 public class PlayerProfileController {
 
     private final PlayerService playerService;
