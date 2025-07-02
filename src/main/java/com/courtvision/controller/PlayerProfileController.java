@@ -18,11 +18,11 @@ public class PlayerProfileController {
 
     @GetMapping
     public Object getPlayerProfile(
-            @RequestParam(required = false) Long personId,
+            @RequestParam(required = false) Long playerId,
             @RequestParam String season
     ) {
-        if (personId != null) {
-            return playerService.getPlayerProfile(personId, season);
+        if (playerId != null) {
+            return playerService.getPlayerProfile(playerId, season);
         } else {
             return playerService.getAllPlayerProfilesForSeason(season);
         }

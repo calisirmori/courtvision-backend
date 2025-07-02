@@ -15,8 +15,8 @@ public class PlayerController {
         this.playerService = playerService;
     }
 
-    @GetMapping("/{personId}")
-    public PlayerDto getPlayerProfile(@PathVariable Long personId) {
-        return playerService.getPlayerProfile(personId);
+    @GetMapping("/{playerId}")
+    public PlayerDto getPlayerProfile(@PathVariable Long playerId) {
+        return playerService.getPlayerProfile(playerId);
     }
 }
