@@ -5,7 +5,7 @@ import com.courtvision.service.SeasonalStatsService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/seasonal-stats")
+@RequestMapping("/seasonal-stats")
 public class SeasonalStatsController {
     private final SeasonalStatsService seasonalStatsService;
 
